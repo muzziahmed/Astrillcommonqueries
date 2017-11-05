@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Common replies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+    <!-- 1. Define some markup -->
+    
+    <h2>Greetings</h2>
+    <button class="btn" data-clipboard-text="Hello are you there ?">Are you there?</button>
+    <button class="btn" data-clipboard-text="Due to inactivity. We are going to close this chat.You can contact us 24/7. Have a good one. Bye">inactivity close</button>
+    <button class="btn" data-clipboard-text="Please open your registered email with Astrill and check for an Email from Astrill. We have sent you a password reset link. Click on that link and set a new password.">reset link sent</button>
+    <button class="btn" data-clipboard-text="I am afraid free trial is not available for users in China currently.">China trial</button>
+    <button class="btn" data-clipboard-text="Can you please confirm your Email ID registered with Astrill?">email ID</button>
+    <button class="btn" data-clipboard-text="Let me forward you to the technical department and they can assist you in this regard.">forward tech dept</button>
+    
+    <button class="btn" data-clipboard-text="We have moved this ticket to the concerned department. We will get back at you at the earliest.">concerned dept</button>
+    <button class="btn" data-clipboard-text="Please use this link to download Astrill on your device : https://astrilldownloads.com/AstrillVpn-3.4.52.apk">APK</button>
+    <button class="btn" data-clipboard-text="Thank you for your feedback. It appears they are actively blocking VPN connections at this time. Our engineers are working on this issue, It will be fixed shortly.">BBC ISSUE</button>
+    <button class="btn" data-clipboard-text="Please follow these steps :
+                                             -Uninstall Astrill app on your iOS.
+                                             -Go to Settings > General > Reset > Reset Network Settings. Restart the device.
+                                             -Reinstall Astrill VPN app from the AppStore v2.1-Try connecting with the available servers">Iphone app wont work</button>
+    <button class="btn" data-clipboard-text="would you require further assistance?">further assist</button>
+    <button class="btn" data-clipboard-text="I am going to close this chat now. Have a good/day night. Take care. Bye">bye 
+    bye</button>
+    
+    <br>
+    
+    <h2>Payment Issues</h2>
+    <button class="btn" data-clipboard-text="Hello are you there ?">Are you there?</button>
+    <button class="btn" data-clipboard-text="Due to inactivity. We are going to close this chat.You can contact us 24/7. Have a good one. Bye">inactivity close</button>
+    <button class="btn" data-clipboard-text="Please open your registered email with Astrill and check for an Email from Astrill. We have sent you a password reset link. Click on that link and set a new password.">reset link sent</button>
+    <button class="btn" data-clipboard-text="I am afraid free trial is not available for users in China currently.">China trial</button>
+    <button class="btn" data-clipboard-text="Can you please confirm your Email ID registered with Astrill?">email ID</button>
+    <button class="btn" data-clipboard-text="Let me forward you to the technical department and they can assist you in this regard.">forward tech dept</button>
+    
+    <button class="btn" data-clipboard-text="We have moved this ticket to the concerned department. We will get back at you at the earliest.">concerned dept</button>
+    <button class="btn" data-clipboard-text="Please use this link to download Astrill on your device : https://astrilldownloads.com/AstrillVpn-3.4.52.apk">APK</button>
+    <button class="btn" data-clipboard-text="Thank you for your feedback. It appears they are actively blocking VPN connections at this time. Our engineers are working on this issue, It will be fixed shortly.">BBC ISSUE</button>
+    <button class="btn" data-clipboard-text="Please follow these steps :
+                                             -Uninstall Astrill app on your iOS.
+                                             -Go to Settings > General > Reset > Reset Network Settings. Restart the device.
+                                             -Reinstall Astrill VPN app from the AppStore v2.1-Try connecting with the available servers">Iphone app wont work</button>
+    <button class="btn" data-clipboard-text="would you require further assistance?">further assist</button>
+    <button class="btn" data-clipboard-text="I am going to close this chat now. Have a good/day night. Take care. Bye">bye bye</button>
+    
+     <br>
+    
+    <h2>Closing</h2>
+    <button class="btn" data-clipboard-text="Hello are you there ?">Are you there?</button>
+    <button class="btn" data-clipboard-text="Due to inactivity. We are going to close this chat.You can contact us 24/7. Have a good one. Bye">inactivity close</button>
+    <button class="btn" data-clipboard-text="Please open your registered email with Astrill and check for an Email from Astrill. We have sent you a password reset link. Click on that link and set a new password.">reset link sent</button>
+    <button class="btn" data-clipboard-text="I am afraid free trial is not available for users in China currently.">China trial</button>
+    <button class="btn" data-clipboard-text="Can you please confirm your Email ID registered with Astrill?">email ID</button>
+    <button class="btn" data-clipboard-text="Let me forward you to the technical department and they can assist you in this regard.">forward tech dept</button>
+    
+    <button class="btn" data-clipboard-text="We have moved this ticket to the concerned department. We will get back at you at the earliest.">concerned dept</button>
+    <button class="btn" data-clipboard-text="Please use this link to download Astrill on your device : https://astrilldownloads.com/AstrillVpn-3.4.52.apk">APK</button>
+    <button class="btn" data-clipboard-text="Thank you for your feedback. It appears they are actively blocking VPN connections at this time. Our engineers are working on this issue, It will be fixed shortly.">BBC ISSUE</button>
+    <button class="btn" data-clipboard-text="Please follow these steps :
+                                             -Uninstall Astrill app on your iOS.
+                                             -Go to Settings > General > Reset > Reset Network Settings. Restart the device.
+                                             -Reinstall Astrill VPN app from the AppStore v2.1-Try connecting with the available servers">Iphone app wont work</button>
+    <button class="btn" data-clipboard-text="would you require further assistance?">further assist</button>
+    <button class="btn" data-clipboard-text="I am going to close this chat now. Have a good/day night. Take care. Bye">bye bye</button>
+
+
+    <!-- 2. Include library -->
+    <script src="JS/clipboard.min.js"></script>
+
+    <!-- 3. Instantiate clipboard by passing a string selector -->
+    <script>
+    var clipboard = new Clipboard('.btn');
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+    </script>
+</body>
+</html>
